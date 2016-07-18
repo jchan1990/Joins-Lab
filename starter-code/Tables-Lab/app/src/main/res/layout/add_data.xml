@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Data"
+        android:textSize="20sp" />
+
+    <!--inputType specifies the input method type for the text field-->
+    <EditText
+        android:id="@+id/ssn_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in your [SSN]"
+        android:inputType="numberPassword" />
+
+    <!--inputType specifies the input method type for the text field-->
+    <EditText
+        android:id="@+id/firstName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in your [First Name]"
+        android:inputType="textPersonName" />
+
+    <!--inputType specifies the input method type for the text field-->
+    <EditText
+        android:id="@+id/lastName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in your [Last Name]"
+        android:inputType="textPersonName" />
+
+    <!--inputType specifies the input method type for the text field-->
+    <EditText
+        android:id="@+id/yearOfBirth_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in your [Year Of Birth]"
+        android:inputType="date" />
+
+    <!--inputType specifies the input method type for the text field-->
+    <EditText
+        android:id="@+id/city_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in your [City]"
+        android:inputType="text" />
+
+
+</LinearLayout>
