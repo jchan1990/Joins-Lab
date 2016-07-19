@@ -49,12 +49,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //
+        db.execSQL(SQL_CREATE_ENTRIES_EMPLOYEE);
+        db.execSQL(SQL_CREATE_ENTRIES_JOB);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase db, int oldVer, int newVer) {
+        db.execSQL(SQL_DELETE_ENTRIES_EMPLOYEE);
+        db.execSQL(SQL_DELETE_ENTRIES_JOB);
     }
 
     private static final String SQL_CREATE_ENTRIES_EMPLOYEE =
